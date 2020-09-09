@@ -12,25 +12,21 @@ public class ProgramTwo {
 		final int VALORES = 10;
 		Scanner sc = new Scanner(System.in);
 		double [] numero = new double[VALORES];
-		double save;
+		double auxiliar;
 		
 		for(int i = 0; i < VALORES; i++) {
 			System.out.println("Entre com um número: ");
 			numero [i] = sc.nextDouble();
-		}
 		
-		for(int i = 0; i < VALORES; i++) {
-				
-			
 			for(int j=0; j<numero.length; j++)
 				
 				if(numero[i] <= numero[j]) {
-					save = numero [i];
+					auxiliar = numero [i];
 					numero[i] = numero [j];
-					numero [j] = save;
+					numero [j] = auxiliar;
 				}
-						
-			} 
+		}
+		
 		System.out.println();
 		
 		for(int i = 0; i < VALORES; i++) {
